@@ -1,0 +1,18 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow authenticated users to write to their own 'users/{userId}' document
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Allow authenticated users to read/write to their own 'jobs/{jobId}' subcollection
+    match /users/{userId}/jobs/{jobId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Allow authenticated users to read/write to their own 'candidates' subcollection
+    match /users/{userId}/candidates/{candidateId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

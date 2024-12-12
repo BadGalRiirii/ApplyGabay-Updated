@@ -1,0 +1,304 @@
+/* General Container Styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #FFFFFF, #E6ECF4); /* Light gradient background for a clean look */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #2A3B54; /* Darker blue for sidebar */
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #1B2A3E;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.sidebar h2 {
+  color: #5271FF; /* Light blue for title text */
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  width: 100%;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #99B0D2; /* Soft grayish blue for link text */
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-align: left;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar li a:hover,
+.sidebar li a.active {
+  background-color: #5271FF; /* Bright blue on hover */
+  color: #fff;
+  transform: scale(1.05); /* Subtle scaling effect on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #F9FAFC; /* Light neutral background for main content */
+  color: #2A3B54; /* Darker blue text */
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+  color: #5271FF; /* Same light blue for headers */
+  transition: color 0.3s ease;
+}
+
+.header-icons span {
+  font-size: 24px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #2A3B54;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-header .header-icons span:hover {
+  color: #5271FF; /* Blue hover for icons */
+  transform: rotate(10deg); /* Subtle rotation effect on hover */
+}
+
+/* Summary Section */
+.dashboard-summary h2,
+.dashboard-calendar h2,
+.dashboard-active-jobs h2 {
+  font-size: 20px;
+  color: #5271FF; /* Blue for section headers */
+  margin-bottom: 15px;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add space between cards */
+}
+
+.summary-cards .card {
+  background-color: #99B0D2; /* Softer light blue for cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for cards */
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  color: #2A3B54;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-cards .card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.summary-cards .card h3 {
+  font-size: 36px;
+  margin: 0 0 10px;
+  color: #1C6DD0; /* Deep blue for card highlights */
+}
+
+.summary-cards .card p {
+  font-size: 16px;
+  color: #2A3B54;
+}
+
+/* Active Jobs Section */
+.dashboard-active-jobs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-active-jobs li {
+  background-color: #E6ECF4; /* Very light blue for job items */
+  border: 1px solid #B0C7E6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #2A3B54;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dashboard-active-jobs li:hover {
+  background-color: #5271FF;
+  color: #fff;
+  transform: translateX(10px); /* Subtle sliding effect */
+}
+
+/* Calendar Section */
+.calendar-display {
+  background-color: #E6ECF4; /* Light blue for calendar display */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calendar-display h3 {
+  font-size: 20px;
+  color: #1C6DD0; /* Consistent deep blue for section headers */
+}
+
+.calendar-display p {
+  font-size: 16px;
+  color: #2A3B54;
+}
+
+
+
+/* Kanban Board Styles */
+.kanban-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the columns */
+}
+
+.kanban-column {
+  width: 22%;
+  padding: 10px;
+  background-color: #F9FAFC; /* Light background for columns */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #1C6DD0; /* Consistent deep blue for column headers */
+}
+
+.kanban-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kanban-card {
+  display: flex;
+  flex-direction: column; /* Align the elements vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  padding: 10px;
+  margin: 5px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card button {
+  margin-top: 8px; /* Adjust the space between the name and the button */
+  padding: 5px 10px; /* Adjust padding for smaller buttons */
+  font-size: 12px; /* Keep the font size small */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.kanban-card button:hover {
+  background-color: #0056b3;
+}
+
+.kanban-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Kanban List Items Styling */
+.kanban-column li {
+  background-color: #E6ECF4;
+  border: 1px solid #B0C7E6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #2A3B54;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.kanban-column li:hover {
+  transform: translateX(10px); /* Subtle sliding effect */
+}
+
+/* Allowing for the drag-and-drop styling */
+.kanban-card[draggable="true"] {
+  cursor: grab;
+}
+
+.kanban-column {
+  border: 2px dashed #B0C7E6; /* Add dashed border to indicate droppable area */
+}
+
+.kanban-column:active {
+  border: 2px dashed #5271FF; /* Change border color when column is active */
+}
+
+
+
+/* New CSS for action buttons */
+.action-buttons {
+  display: flex; /* Flexbox to arrange buttons next to each other */
+  gap: 10px; /* Adds space between the buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 8px; /* Adds space between the name and the buttons */
+}
+
+.hire-button, .reject-button {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.hire-button {
+  background-color: #28a745; /* Green for Hire */
+}
+
+.hire-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.reject-button {
+  background-color: #dc3545; /* Red for Reject */
+}
+
+.reject-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+
+.column-count {
+  font-size: 14px;
+  color: #2A3B54;
+  margin-left: 5px;
+  font-weight: bold;
+}

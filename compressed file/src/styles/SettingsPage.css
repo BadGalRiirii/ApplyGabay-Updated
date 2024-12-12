@@ -1,0 +1,209 @@
+/* General Styling for Settings Page */
+.settings-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-theme {
+    background-color: #333;
+  }
+  
+  /* Ensure all text is black in both themes */
+  body,
+  .settings-page,
+  .settings-header,
+  .settings-container,
+  .settings-section,
+  .settings-card,
+  .settings-section h2,
+  .settings-input,
+  .toggle-btn,
+  .btn-save {
+    color: black !important;
+  }
+  
+  /* Specific adjustments for dark theme */
+  body.dark-theme .settings-page,
+  body.dark-theme .settings-header,
+  body.dark-theme .settings-container,
+  body.dark-theme .settings-section,
+  body.dark-theme .settings-card,
+  body.dark-theme .settings-section h2 {
+    background: #444; /* Dark background to maintain contrast */
+  }
+  
+  .settings-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .settings-header h1 {
+    font-size: 38px;
+    color: #333;
+  }
+  
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Each section is in a box */
+  .settings-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .settings-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .settings-section h2 svg {
+    margin-right: 12px;
+    color: #2196f3;
+  }
+  
+  .settings-input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  body.dark-theme .settings-input {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+  }
+  
+  .settings-input:focus {
+    border-color: #2196f3;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .toggle-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn.enabled {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .toggle-btn.disabled {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .password-change-form {
+    margin-top: 15px;
+  }
+  
+  .password-change-form input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+  }
+  
+  .password-change-form button {
+    margin-top: 12px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Save Settings */
+  .save-settings {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .btn-save {
+    background-color: #2196f3;
+    color: white;
+    padding: 18px 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-save:hover {
+    background-color: #1976d2;
+  }
+  
+  .btn-save svg {
+    margin-right: 8px;
+  }
+  
+  /* Help Button */
+  .btn-help {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-help:hover {
+    background-color: #e68900;
+  }
+  
+  /* Hover Effects for Cards */
+  .settings-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media screen and (min-width: 768px) {
+    .settings-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .settings-section {
+      width: 48%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .settings-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .settings-section {
+      width: 30%;
+    }
+  }

@@ -1,0 +1,208 @@
+/* General Page Styling */
+.messages-page {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: linear-gradient(135deg, #f4f4f4, #d6d6d6);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Header Styling */
+  .messages-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .messages-header h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messages-header p {
+    color: #666;
+    font-size: 16px;
+    margin-top: 0;
+    font-style: italic;
+  }
+  
+  /* Messages List Styling */
+  .messages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Message Card Styling */
+  .message-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid transparent;
+    overflow: hidden;
+  }
+  
+  .message-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .message-card.unread {
+    border-left: 5px solid #ffb703;
+  }
+  
+  .message-card.reviewed {
+    border-left: 5px solid #4caf50;
+  }
+  
+  .message-card h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .message-card p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .message-card .status {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Badge Styling */
+  .message-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .message-card .badge.new {
+    background-color: #ffb703;
+  }
+  
+  .message-card .badge.urgent {
+    background-color: #e91e63;
+  }
+  
+  /* Message Actions */
+  .message-actions {
+    margin-top: 15px;
+    text-align: right;
+  }
+  
+  .btn-view-message,
+  .btn-mark-reviewed {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 14px;
+  }
+  
+  .btn-view-message:hover,
+  .btn-mark-reviewed:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+  }
+  
+  .btn-mark-reviewed {
+    background-color: #4caf50;
+  }
+  
+  /* Modal Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .email-content {
+    white-space: pre-wrap;
+    font-family: monospace;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .modal-actions {
+    text-align: right;
+  }
+  
+  .btn-close-modal {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-close-modal:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
