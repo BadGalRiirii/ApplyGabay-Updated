@@ -1,0 +1,25 @@
+/* General reset for margin, padding, and box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* General body styling */
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Ensuring the app is always 100% height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+

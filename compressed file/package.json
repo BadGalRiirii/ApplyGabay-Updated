@@ -4,13 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-<<<<<<< HEAD
-=======
-
->>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -20,15 +14,8 @@
     "@sendgrid/mail": "^8.1.4",
     "dotenv": "^16.4.7",
     "emailjs-com": "^3.2.0",
-<<<<<<< HEAD
-    "express": "^4.21.2",
     "firebase": "^9.0.0",
     "jspdf": "^2.5.2",
-    "multer": "^1.4.5-lts.1",
-=======
-    "firebase": "^9.0.0",
-    "jspdf": "^2.5.2",
->>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
     "react-beautiful-dnd": "^13.1.1",
     "react-hook-form": "^7.0.0",
     "react-icons": "^4.0.0",
@@ -48,10 +35,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-=======
->>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
     "eslint": "^8.57.1"
   }
 }

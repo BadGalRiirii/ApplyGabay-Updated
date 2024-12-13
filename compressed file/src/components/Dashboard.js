@@ -128,12 +128,6 @@ function Dashboard() {
           <li>
             <Link to="/settings">Settings</Link>
           </li>
-<<<<<<< HEAD
-          <li>
-            <Link to="/interview-scheduler">Interview Scheduler</Link>
-            </li> {/* This is the new link */}
-=======
->>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
         </ul>
       </aside>
 
