@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
 # Innovexa
 =======
 # Getting Started with Create React App
@@ -75,7 +78,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 "# ApplyGabay" 
 "# ApplyGabay" 
 >>>>>>> e41b338 (Initial commit)
+<<<<<<< HEAD
+"# INNOVEXXA" 
+=======
 =======
 # ApplyGabay-Updated
 Updated codes ni sya, still no scheduler, graph and sending email na mga features :(
 >>>>>>> ecbb6a10a29ad19901d44f69ec499ca4387284b0
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014

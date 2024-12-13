@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
+import { collection, onSnapshot, updateDoc, deleteDoc, doc } from "firebase/firestore";
+=======
 import { collection, addDoc, onSnapshot, updateDoc, deleteDoc, doc } from "firebase/firestore";
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
 import { getAuth } from "firebase/auth";
 import { db } from "./firebase";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
+<<<<<<< HEAD
+=======
   const [newJob, setNewJob] = useState({
     title: "",
     applicants: "",
@@ -12,6 +18,7 @@ function Jobs() {
     phoneNumber: "",
     status: "Open",
   });
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
   const [searchQuery, setSearchQuery] = useState("");
 
   // Fetch jobs in real-time from Firestore based on the logged-in user's UID
@@ -43,6 +50,8 @@ function Jobs() {
     }
   }, []);
 
+<<<<<<< HEAD
+=======
   // Add a new job
   const addJob = async (e) => {
     e.preventDefault();
@@ -85,6 +94,7 @@ function Jobs() {
     }
   };
 
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
   // Update job status (Open, Closed, Hired)
   const updateJobStatus = async (id, status) => {
     try {
@@ -114,9 +124,14 @@ function Jobs() {
   };
 
   // Filter jobs based on search query
+<<<<<<< HEAD
+  const filteredJobs = jobs.filter((job) =>
+    job.title.toLowerCase().includes(searchQuery.toLowerCase())
+=======
   const filteredJobs = jobs.filter(
     (job) =>
       job.title.toLowerCase().includes(searchQuery.toLowerCase())
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
   );
 
   return (
@@ -145,6 +160,10 @@ function Jobs() {
               <th>Address</th>
               <th>Phone Number</th>
               <th>Status</th>
+<<<<<<< HEAD
+              <th>Resume</th> {/* New Resume Column */}
+=======
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
               <th>Actions</th>
             </tr>
           </thead>
@@ -171,6 +190,22 @@ function Jobs() {
                     </select>
                   </td>
                   <td>
+<<<<<<< HEAD
+                    {job.resume ? (
+                      <a
+                        href={job.resumePreview || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Resume
+                      </a>
+                    ) : (
+                      "No resume uploaded"
+                    )}
+                  </td>
+                  <td>
+=======
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
                     <button onClick={() => deleteJob(job.id)} style={{ marginLeft: "10px" }}>
                       Delete
                     </button>
@@ -179,7 +214,11 @@ function Jobs() {
               ))
             ) : (
               <tr>
+<<<<<<< HEAD
+                <td colSpan="7" style={{ textAlign: "center" }}>
+=======
                 <td colSpan="6" style={{ textAlign: "center" }}>
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
                   No jobs available.
                 </td>
               </tr>
@@ -191,4 +230,8 @@ function Jobs() {
   );
 }
 
+<<<<<<< HEAD
 export default Jobs;
+=======
+export default Jobs;
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014

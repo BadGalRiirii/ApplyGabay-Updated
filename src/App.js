@@ -10,6 +10,11 @@ import TaskPage from './components/TaskPage';
 import MessagesPage from './components/MessagesPage';
 import SettingsPage from './components/SettingsPage';
 import Applicants from './components/Applicants';
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
 import './styles/App.css';
 
 function App() {
@@ -24,6 +29,10 @@ function App() {
             <Link to="/login" className="nav-link">Login</Link>
             <Link to="/signup" className="nav-link">Sign Up</Link>
             <Link to="/dashboard" className="nav-link">Home</Link>
+<<<<<<< HEAD
+            
+=======
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
           </nav>
         </header>
 
@@ -40,6 +49,10 @@ function App() {
             <Route path="/messages" element={<MessagesPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/applicants" element={<Applicants />} />
+<<<<<<< HEAD
+            
+=======
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
           </Routes>
         </main>
 

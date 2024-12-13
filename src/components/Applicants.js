@@ -168,4 +168,8 @@ function Applicants() {
   );
 }
 
+<<<<<<< HEAD
 export default Applicants;
+=======
+export default Applicants;
+>>>>>>> b1e638429e6a3043c1798e33ede0c7a13a108014
