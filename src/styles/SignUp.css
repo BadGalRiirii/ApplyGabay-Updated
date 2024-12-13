@@ -1,0 +1,114 @@
+/* SignUp Form Styling */
+.signup-container {
+  background-color: #181818; /* Dark background for the container */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #ecf0f1; /* Light text color */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #00C9FF; /* Accent color for the heading */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #ecf0f1; /* Light text color for labels */
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #333; /* Darker border */
+  border-radius: 4px;
+  background-color: #292929; /* Dark background for inputs */
+  color: #ecf0f1; /* Light text inside input */
+}
+
+input:focus {
+  border-color: #00C9FF; /* Accent color on focus */
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #00C9FF; /* Accent color for button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5271FF; /* Slightly darker blue on hover */
+}
+
+.error-message {
+  color: #e74c3c; /* Red color for error messages */
+  font-size: 0.9rem;
+}
+
+.account-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-footer a {
+  color: #00C9FF; /* Accent color for links */
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .signup-container {
+      max-width: 90%;
+      padding: 20px;
+  }
+}
+.signup-footer {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* Centers the content */
+  gap: 10px; /* Adds space between the items */
+  flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+}
+
+.signup-footer a {
+  color: #00C9FF; /* Accent color for links */
+  text-decoration: none;
+  font-size: 1rem; /* Sets a readable font size */
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}

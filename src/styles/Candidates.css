@@ -1,0 +1,174 @@
+.candidates-page {
+  padding: 30px;
+  background-color: #181818;
+  color: #ecf0f1;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.filter-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #292929;
+  border-radius: 8px;
+  padding: 5px 10px;
+  width: 350px; /* Increase width for a more comfortable search area */
+}
+
+.filter-input {
+  background-color: #383838;
+  color: #ecf0f1;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.filter-input:focus {
+  border-color: #00C9FF;
+  outline: none;
+}
+
+.search-icon {
+  color: #00C9FF;
+  margin-right: 10px;
+}
+
+.status-filter select {
+  background-color: #ffff;
+  color: #ecf0f1;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.status-filter select:focus {
+  border-color: #00C9FF;
+}
+
+/* Apply Kanban Column Styles to Applicant-Cards */
+.applicant-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for cards */
+  gap: 20px; /* Space between cards */
+  justify-content: space-between; /* Align cards like Kanban columns */
+  padding: 10px;
+  background-color: #F9FAFC; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.applicant-card {
+  width: 22%; /* Similar width as Kanban cards */
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Allow height to grow based on content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown-container {
+  margin-top: 10px;
+}
+
+.status-dropdown {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 10px; /* Adds a gap between buttons */
+}
+
+.download-pdf-btn {
+  padding: 6px 12px; /* Smaller padding */
+  font-size: 12px; /* Smaller font size */
+  background-color: #5271FF; /* Ensure it maintains the original color */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-pdf-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Interview section layout to be horizontal */
+.interview-scheduled {
+  display: flex; /* Flexbox to make the text horizontal */
+  align-items: center; /* Vertically align the content */
+  font-size: 14px; /* Adjust font size */
+  color: #2A3B54; /* Adjust text color */
+  margin-bottom: 10px; /* Add spacing below the interview section */
+}
+
+.interview-scheduled label {
+  margin-right: 5px; /* Add space between label and the date */
+}
+
+.interview-scheduled p {
+  margin: 0; /* Remove margin from the paragraph to align properly */
+  font-weight: normal; /* Set normal font weight for the date */
+}
+
+/* Align buttons below the Interview Date */
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Space between buttons */
+  justify-content: center; /* Align buttons horizontally in the center */
+  margin-top: 10px; /* Add spacing between Interview Scheduled and buttons */
+}
+
+/* Styling for the "Hire" and "Reject" buttons */
+.kanban-card .hire-button,
+.kanban-card .reject-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Green button for Hire */
+.kanban-card .hire-button {
+  background-color: #28a745;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+/* Red button for Reject */
+.kanban-card .reject-button {
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid #dc3545;
+}
+
+/* Hover effects for the buttons */
+.kanban-card .hire-button:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.kanban-card .reject-button:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
